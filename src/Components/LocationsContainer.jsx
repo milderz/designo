@@ -10,7 +10,7 @@ const LocationsContainer = () => {
   ]
   return (
     <StyledLocationsContainer>
-     { locations.map((location) => ( <LocationDetailCard location={location.location} office={location.office} addressLine1={location.addressLine1} addressLine2={location.addressLine2} phoneContact={location.phoneContact} mailContact={location.mailContact} locationImage={location.locationImage} versionPrimary={location.versionPrimary}/>))}
+     { locations.map((location) => ( <LocationDetailCard key={location.phoneContact} location={location.location} office={location.office} addressLine1={location.addressLine1} addressLine2={location.addressLine2} phoneContact={location.phoneContact} mailContact={location.mailContact} locationImage={location.locationImage} versionPrimary={location.versionPrimary}/>))}
     
       
     </StyledLocationsContainer>

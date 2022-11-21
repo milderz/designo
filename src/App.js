@@ -19,10 +19,12 @@ import {
   GraphicDesign,
 } from "./ProjectsData/ProjectsData";
 import ServicePreviewWrapper from "./Components/ServicePreviewWrapper";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <GlobalStyles />
         <Header />
